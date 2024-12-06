@@ -8,19 +8,20 @@
     <title>Soluções Inteligentes</title>
 </head>
 <body>
-    <header>
-        <nav class="navegacao-cabecalho">
-            <img src="img/Frame 3 (1).png" alt="">
-            <ul class="lista-cabecalho">
-                <li class="itens-cabecalho"><a href="#">Início</a></li>
-                <li class="itens-cabecalho"><a href="#">Relatórios</a></li>
-                <li class="itens-cabecalho"><a href="#">Sobre</a></li>
-                <li class="itens-cabecalho"><a href="#">Projetos</a></li>
-                <li class="itens-cabecalho"><a href="#">Contato</a></li>
-            </ul>
-            <button class="btn-cabecalho">Contact us</button>
-        </nav>
-    </header>
+        <header>
+            <nav class="navegacao-cabecalho">
+                <img src="img/Frame 3.png" alt="">
+                <ul class="lista-cabecalho">
+                    <li class="itens-cabecalho"><a href="/index.html">Início</a></li>
+                    <li class="itens-cabecalho"><a href="/pag-relatar-problema/pag.html">Relatos</a></li>
+                    <li class="itens-cabecalho"><a href="/pag-solucao/index.html">Governos</a></li>
+                    <li class="itens-cabecalho"><a href="/pag-ralatorio/index.html">Problemas</a></li>
+                    <li class="itens-cabecalho"><a href="/index.html#pcr">Contato</a></li>
+                </ul>
+                <button class="btn-login" id="open-login-popup"><a href="#">Login</a></button>
+    
+            </nav>
+        </header>
 
     <section class="solucao">
         <h1 class="titulo-solucao">
@@ -124,5 +125,26 @@
             </li>
         </ul>
     </footer>
+
+       <!-- Popup de Login -->
+       <div class="popup-overlay" id="login-popup">
+        <div class="popup-content" id="popup-content">
+            <h1 class="titulo-login">Bem-vindo!</h1>
+            <p class="paragrafo-login">Faça login para continuar.</p>
+            <form action="#" method="POST" class="form-login">
+                <label for="email" class="label-login">E-mail</label>
+                <input type="email" id="email" name="email" class="input-login" placeholder="Digite seu e-mail" required>
+    
+                <label for="senha" class="label-login">Senha</label>
+                <input type="password" id="senha" name="senha" class="input-login" placeholder="Digite sua senha" required>
+                <a href="/pag-cadastro/index.html" class="paragrafo-cadastro">Faça seu Cadastro</a>
+    
+                <button type="submit" class="btn-login-popup">Entrar</button>
+            </form>
+            <button class="btn-close-popup" id="close-login-popup">Fechar</button>
+        </div>
+    </div>
+    
+    <script src="/auth/login.js"></script>
 </body>
 </html>
